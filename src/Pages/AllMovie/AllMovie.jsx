@@ -40,7 +40,7 @@ const AllMovie = () => {
             </Grid>
           ))}
         </Grid>
-        {isLoading && <Typography variant="h6">Loading...</Typography>}
+        {isLoading && <Typography variant="h6">Loading....</Typography>}
         {error && <Typography variant="h6">Error: {error.message}</Typography>}
         {!isLoading && !error && data && data.length === 0 && (
           <Typography variant="h6">No data available.</Typography>
